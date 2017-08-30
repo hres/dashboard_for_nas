@@ -41,7 +41,7 @@ HCadv<-fread('HCAdvisory.csv',sep=',',header=T,stringsAsFactors = F)
 USadv<-fread('USadv.csv',sep=',',header=T,stringsAsFactors = F)
 
 #notice of compliance table:
-NOCtab<-fread('NOC_mapping.csv',header=T,sep=',',stringsAsFactors = F)
+NOCtab<-load('NOC_mapping.RData')
         # select(Ingredient=NOC_PI_MEDIC_INGR_ENG_NAME,
         #        BrandName=NOC_BR_BRANDNAME,
         #        Date=NOC_DATE,
